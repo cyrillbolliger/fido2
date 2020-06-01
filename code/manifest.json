@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "EvilFido2",
+    "version": "1.0",
+    "description": "Demonstrates some man-in-the-browser vulnerabilities of fido2.",
+    "icons": {
+        "48": "../assets/logo-48.png",
+        "96": "../assets/logo-96.png"
+    },
+    "browser_action": {
+        "default_icon": "../assets/logo-48.png"
+    },
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "dist/bundle.js"
+        ]
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}
