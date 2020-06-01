@@ -1,7 +1,7 @@
-# FIDO2 -- What can a man in the browser do?
+# FIDO2 - What can a man in the browser do?
 Analysis of the strength of a man in the browser against the FIDO2 authentication mechanism.
 
-_Yet another school project_
+_Yet another school project._
 
 ## Abstract
 This paper examines what harm a malicious browser extension can do to a FIDO2 authentication.
